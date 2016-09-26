@@ -17,11 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LhA-bi-cCe">
-                                <rect key="frame" x="274" y="285" width="51" height="31"/>
-                            </switch>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Qpa-L1-qPP">
-                                <rect key="frame" x="376" y="193" width="94" height="29"/>
+                                <rect key="frame" x="162" y="239" width="94" height="29"/>
                                 <connections>
                                     <action selector="StepperPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="7zN-3e-LjC"/>
                                 </connections>
@@ -35,7 +32,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPz-Cv-sd3">
-                                <rect key="frame" x="287" y="300" width="152" height="30"/>
+                                <rect key="frame" x="143" y="324" width="152" height="30"/>
                                 <state key="normal" title="Click this"/>
                                 <connections>
                                     <action selector="firstButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1wc-XM-g8i"/>
@@ -44,6 +41,9 @@
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="PTG-bd-0RL">
                                 <rect key="frame" x="124" y="127" width="118" height="31"/>
                             </slider>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LhA-bi-cCe">
+                                <rect key="frame" x="191" y="276" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
