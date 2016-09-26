@@ -19,6 +19,12 @@ class ViewController: UIViewController
     @IBOutlet private weak var firstSlider:
     UISlider!
     
+    @IBOutlet weak var firstStepper:
+    UIStepper!
+    
+    @IBOutlet weak var firstSwitch:
+    UISwitch!
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -36,5 +42,19 @@ class ViewController: UIViewController
     {
         textLabel.text = "You clicked the button!"
     }
-}
+    
+    
+    @IBAction func StepperPressed(sender: UIStepper) ->
+        Void
+    {
+        textLabel.text = "You changed the stepper"
+    }
+    
+    @IBAction func switchChanged(sender: UISwitch) ->
+        Void
+    {
+        textLabel.text = "You changed the switch!"
+    }
+    
+  }
 

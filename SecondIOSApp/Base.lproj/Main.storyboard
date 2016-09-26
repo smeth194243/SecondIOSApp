@@ -18,13 +18,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="This is a text box yo" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NuB-jB-Mzy">
-                                <rect key="frame" x="107" y="76" width="302" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Qpa-L1-qPP">
                                 <rect key="frame" x="376" y="193" width="94" height="29"/>
+                                <connections>
+                                    <action selector="StepperPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="7zN-3e-LjC"/>
+                                </connections>
                             </stepper>
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="gXJ-ie-VX1">
                                 <rect key="frame" x="258" y="514" width="39" height="37"/>
@@ -47,6 +45,10 @@
                                             <subviews>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LhA-bi-cCe">
                                                     <rect key="frame" x="1" y="11" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="firstSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="4vN-YP-j3k"/>
+                                                        <action selector="switchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="mfB-p8-5Nz"/>
+                                                    </connections>
                                                 </switch>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -75,6 +77,8 @@
                     <connections>
                         <outlet property="firstButton" destination="FPz-Cv-sd3" id="wIt-Xa-5hq"/>
                         <outlet property="firstSlider" destination="PTG-bd-0RL" id="WBw-9a-6UG"/>
+                        <outlet property="firstStepper" destination="Qpa-L1-qPP" id="bzV-BC-sCk"/>
+                        <outlet property="firstSwitch" destination="LhA-bi-cCe" id="n6H-Jh-fQc"/>
                         <outlet property="textLabel" destination="Fdf-1w-osa" id="qga-qc-edZ"/>
                     </connections>
                 </viewController>
