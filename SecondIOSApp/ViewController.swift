@@ -8,9 +8,19 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
+class ViewController: UIViewController
+{
+    @IBOutlet private weak var textLabel:
+    UILabel!
+    
+    @IBOutlet private weak var firstButton:
+    UIButton!
+    
+    @IBOutlet private weak var firstSlider:
+    UISlider!
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -21,5 +31,10 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func firstButtonClick(sender: UIButton) ->
+        Void
+    {
+        textLabel.text = "You clicked the button!"
+    }
 }
 
