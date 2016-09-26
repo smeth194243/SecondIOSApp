@@ -56,5 +56,22 @@ class ViewController: UIViewController
         textLabel.text = "You changed the switch!"
     }
     
+    private func makeRandomColor() ->UIColor
+    {
+        let randomColor : UIColor
+        
+        //Color in Swift is a percentage - from 0-1 nclusive.
+        //Of type CGFloat for all components RGBA
+        
+        let redColor : CGFloat = CGFloat(drand48())
+        let greenColor : CGFloat = CGFloat(Double(arc4random_uniform(256))/255.00)
+        let bluecColor : CGFloat = CGFloat(drand48())
+        let alphaChannel : CGFloat = 1.0
+        
+        randomColor = UIColor(red: redColor, green: greenColor, blue: bluecColor, alpha: alphaChannel)
+        
+        return randomColor
+    }
+    
   }
 
