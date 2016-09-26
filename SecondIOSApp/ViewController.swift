@@ -22,8 +22,9 @@ class ViewController: UIViewController
     @IBOutlet weak var firstStepper:
     UIStepper!
     
-    @IBOutlet weak var firstSwitch:
-    UISwitch!
+
+    @IBOutlet weak var firstSwitch: UISwitch!
+    @IBOutlet var appBackground: UIView!
     
     override func viewDidLoad()
     {
@@ -41,6 +42,8 @@ class ViewController: UIViewController
         Void
     {
         textLabel.text = "You clicked the button!"
+        textLabel.textColor = makeRandomColor()
+        appBackground.backgroundColor = makeRandomColor()
     }
     
     
